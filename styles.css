@@ -1,0 +1,12 @@
+body {font-family: 'Segoe UI', sans-serif; margin: 0; padding: 0; line-height: 1.6; color: #222; background-color: #fafafa;}
+header {background: #111; color: #fff; padding: 15px 0; position: sticky; top: 0;}
+nav ul {display: flex; justify-content: center; list-style: none; margin: 0; padding: 0;}
+nav ul li {margin: 0 15px;}
+nav ul li a {color: #fff; text-decoration: none; font-weight: 600;}
+nav ul li a:hover {text-decoration: underline;}
+section {max-width: 900px; margin: 50px auto; padding: 0 20px;}
+h1, h2 {color: #333;}
+.intro {text-align: center; padding: 60px 20px; background: #f0f0f0;}
+.resume-btn {display: inline-block; padding: 10px 20px; background: #111; color: #fff; text-decoration: none; border-radius: 8px; margin-top: 20px;}
+.resume-btn:hover {background: #333;}
+footer {background: #111; color: #fff; text-align: center; padding: 15px 0; margin-top: 50px;}
