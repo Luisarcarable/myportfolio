@@ -9,17 +9,12 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <meta name="theme-color" content="#0f172a" />
-  <!-- Open Graph -->
-  <meta property="og:title" content="Luisa Carable — Portfolio">
-  <meta property="og:description" content="Project Manager, Social Media Editor, UI/UX & Salesforce Developer.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="">
   <link rel="icon" href="assets/favicon.svg">
 </head>
 <body>
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="#home">Luisa Carable</a>
+      <div class="brand">Luisa Carable</div>
       <nav class="nav" id="nav">
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
@@ -27,54 +22,24 @@
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
       </nav>
-      <button class="menu-btn" id="menuBtn" aria-label="Toggle menu" aria-expanded="false">
-        <span class="menu-icon">☰</span>
-      </button>
+      <button class="menu-btn" id="menuBtn" aria-label="Toggle menu" aria-expanded="false">☰</button>
     </div>
   </header>
 
   <main>
-    <!-- HERO -->
-    <section id="home" class="hero">
-      <div class="container hero-grid">
-        <div class="hero-copy">
-          <h1>Hi, I’m Luisa Carable</h1>
-          <p class="lead">
-            4th year Information Technology student at Polytechnic University of the Philippines — San Juan.
-            Pasig City Scholar since 2017. I combine technology, creativity, and storytelling to craft meaningful digital experiences.
-          </p>
-          <p class="meta">
-            Project Manager & Social Media Editor at CNIMedia • Salesforce Developer (Smartbridge)
-          </p>
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="#projects">See Projects</a>
-            <a class="btn btn-ghost" href="mailto:luisarcarable@gmail.com">Email Me</a>
-            <a class="btn btn-outline" href="Luisa-Carable-Resume.pdf" download>Download Resume</a>
-          </div>
-
-          <ul class="social-inline" aria-label="social links">
-            <li><a href="https://www.linkedin.com/in/luisarcarable" target="_blank" rel="noopener">LinkedIn</a></li>
-            <li><a href="mailto:luisarcarable@gmail.com">Business Email</a></li>
-            <li><a href="mailto:luisarcarable@iskolarngbayan.pup.edu.ph">Student Email</a></li>
-            <li><a href="https://www.salesforce.com/trailblazer/p2p9ljaii4x4k3eonz" target="_blank" rel="noopener">Salesforce Trailblazer</a></li>
-          </ul>
+    <!-- PROFILE -->
+    <section id="profile" class="section container profile-section">
+      <div class="profile-grid">
+        <div class="profile-image">
+          <!-- Place your image at assets/profile.jpg for best results. If missing, fallback to avatar.svg -->
+          <img src="assets/profile.jpg" alt="Luisa Carable" id="profileImg" onerror="this.onerror=null; this.src='assets/avatar.svg'">
         </div>
-
-        <div class="hero-visual" aria-hidden="true">
-          <div class="profile-card">
-            <div class="avatar" role="img" aria-label="Luisa Carable portrait">
-              <img src="assets/avatar.svg" alt="Luisa Carable placeholder avatar" width="120" height="120">
-            </div>
-            <div class="card-body">
-              <h3>Luisa Carable</h3>
-              <p class="muted">IT Student • Project Manager • Social Media Editor</p>
-              <div class="card-badges">
-                <span>Figma</span>
-                <span>UI/UX</span>
-                <span>Salesforce</span>
-              </div>
-            </div>
-          </div>
+        <div class="profile-copy">
+          <h1 class="profile-title">IT Student • Project Manager • Social Media Editor • Graphic Designer of IsKoolToura PASIGology</h1>
+          <p class="lead">[Short description placeholder] I merge technology, creativity, and storytelling to craft meaningful digital experiences. More details coming soon.</p>
+          <p class="actions">
+            <a class="btn btn-primary" href="https://docs.google.com/document/d/1jlEpmAPMzQBrFz8ersrne4Uo5ncr3k0Esa4uqmtgZNs/edit?usp=sharing" target="_blank" rel="noopener">Download Resume</a>
+          </p>
         </div>
       </div>
     </section>
@@ -82,53 +47,27 @@
     <!-- ABOUT -->
     <section id="about" class="section container">
       <h2>About</h2>
-      <div class="about-grid">
-        <div>
-          <p>
-            I’m Luisa Carable, currently a 4th year college student of Information Technology at the Polytechnic University of the Philippines – San Juan and a proud Pasig City Scholar since 2017 up until now. I’m passionate about merging technology, creativity, and storytelling to craft meaningful digital experiences.
-          </p>
-          <p>
-            As both a Project Manager and Social Media Editor for the CNIMedia Team, I lead in developing creative concepts, managing production workflows, and ensuring that every content piece reflects strong visual communication and strategy. I specialize in editing, content creation, and digital branding, focusing on how technology can enhance engagement and storytelling.
-          </p>
-        </div>
-        <div>
-          <p>
-            In the IT field, I have experience working with Figma for UI/UX design, web-based systems development, and prototyping platforms that integrate innovation, interactivity, and business functionality. I enjoy creating digital solutions that help businesses grow — from website interfaces to interactive systems that improve user experience.
-          </p>
-          <p>
-            I’m driven by curiosity, design thinking, and collaboration — always seeking ways to bridge creativity and technology in every project I work on.
-          </p>
+      <p>I’m Luisa Carable, a 4th year Information Technology student at the Polytechnic University of the Philippines – San Juan and a proud Pasig City Scholar since 2017. I specialize in managing creative projects, editing, content creation, digital branding, UI/UX prototyping, and Salesforce development.</p>
+    </section>
 
-          <h3>Education</h3>
-          <ul class="list">
-            <li><strong>Polytechnic University of the Philippines – San Juan</strong> — B.S. Information Technology (4th year)</li>
-            <li><strong>Nagpayong High School</strong></li>
-            <li><strong>Nagpayong Elementary School</strong></li>
-          </ul>
-        </div>
-      </div>
+    <!-- EDUCATION -->
+    <section id="education" class="section container">
+      <h2>Education</h2>
+      <ul class="list">
+        <li><strong>Polytechnic University of the Philippines – San Juan</strong> — B.S. Information Technology (4th year)</li>
+        <li><strong>Nagpayong High School</strong></li>
+        <li><strong>Nagpayong Elementary School</strong></li>
+      </ul>
     </section>
 
     <!-- SKILLS -->
     <section id="skills" class="section container">
       <h2>Skills</h2>
       <div class="skills-grid">
-        <div class="skill">
-          <h4>Design & Prototyping</h4>
-          <div class="progress"><span style="width:88%">Figma · UI/UX</span></div>
-        </div>
-        <div class="skill">
-          <h4>Web & Systems</h4>
-          <div class="progress"><span style="width:78%">HTML · CSS · JavaScript</span></div>
-        </div>
-        <div class="skill">
-          <h4>Digital Content</h4>
-          <div class="progress"><span style="width:90%">Editing · Branding · Social Media</span></div>
-        </div>
-        <div class="skill">
-          <h4>Platforms</h4>
-          <div class="progress"><span style="width:70%">Salesforce · Prototyping Tools</span></div>
-        </div>
+        <div class="skill"><h4>Design & Prototyping</h4><p>Figma · UI/UX · Prototyping</p></div>
+        <div class="skill"><h4>Web & Systems</h4><p>HTML · CSS · JavaScript · Web-based systems</p></div>
+        <div class="skill"><h4>Digital Content</h4><p>Editing · Branding · Social Media Strategy</p></div>
+        <div class="skill"><h4>Platforms</h4><p>Salesforce · Prototyping Tools</p></div>
       </div>
     </section>
 
@@ -138,22 +77,11 @@
       <div class="timeline">
         <div class="timeline-item">
           <h3>Project Manager & Social Media Editor — CNIMedia Team</h3>
-          <p class="muted">Lead creative concepting, manage production workflow, editing & content strategy</p>
-          <ul>
-            <li>Concept and produce multimedia content aligned to strategy and audience needs.</li>
-            <li>Coordinate teams and production schedules to deliver content on time.</li>
-            <li>Ensure visual communication and brand consistency across channels.</li>
-          </ul>
+          <p>Lead creative concepting, production workflow, editing & content strategy.</p>
         </div>
-
         <div class="timeline-item">
           <h3>Salesforce Developer — Smartbridge (ongoing)</h3>
-          <p class="muted">Implementing Salesforce solutions, building custom logic and automations</p>
-          <ul>
-            <li>Working with Salesforce platform to build solutions improving business workflows.</li>
-            <li>Integrating apps and prototyping data-driven features.</li>
-            <li>Continuously learning platform best practices and tools.</li>
-          </ul>
+          <p>Implementing Salesforce solutions, building custom logic and automations.</p>
           <p><a href="https://www.salesforce.com/trailblazer/p2p9ljaii4x4k3eonz" target="_blank" rel="noopener">Trailblazer profile</a></p>
         </div>
       </div>
@@ -161,88 +89,51 @@
 
     <!-- PROJECTS -->
     <section id="projects" class="section container">
-      <h2>Selected Projects</h2>
-      <p class="muted">Some examples of my work — design, branding, web interfaces, and prototypes.</p>
-
+      <h2>Projects</h2>
+      <p class="muted">Selected projects and links.</p>
       <div class="projects-grid">
         <article class="project-card">
-          <div class="project-media" style="background-image: linear-gradient(135deg,#7c3aed 0%,#06b6d4 100%);"></div>
           <div class="project-body">
             <h4>Website Interface Prototype</h4>
-            <p class="muted">Figma prototype focused on accessible and responsive UI patterns for small businesses.</p>
-            <div class="project-links">
-              <a class="btn btn-sm" href="#" aria-disabled="true">View</a>
-              <a class="btn btn-sm btn-ghost" href="#" aria-disabled="true">Case study</a>
-            </div>
+            <p class="muted">Figma/Canva design prototype for responsive websites.</p>
+            <p><a class="btn btn-sm" href="https://www.canva.com/design/DAG2swy9Fkg/7WDnR8LacsNQ5AmfgkHdfQ/edit?utm_content=DAG2swy9Fkg&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank" rel="noopener">Open Prototype</a></p>
           </div>
         </article>
 
         <article class="project-card">
-          <div class="project-media" style="background-image: linear-gradient(135deg,#fb923c 0%,#ef4444 100%);"></div>
           <div class="project-body">
             <h4>Social Media Campaigns</h4>
-            <p class="muted">Concepting and executing seasonal campaigns that increased engagement.</p>
-            <div class="project-links">
-              <a class="btn btn-sm" href="#" aria-disabled="true">Gallery</a>
-            </div>
-          </div>
-        </article>
-
-        <article class="project-card">
-          <div class="project-media" style="background-image: linear-gradient(135deg,#06b6d4 0%,#3b82f6 100%);"></div>
-          <div class="project-body">
-            <h4>Web-Based System Prototype</h4>
-            <p class="muted">Prototype for an internal workflow system combining interactivity & data handling.</p>
-            <div class="project-links">
-              <a class="btn btn-sm" href="#" aria-disabled="true">Prototype</a>
-            </div>
+            <p class="muted">Campaign planning and execution for CNIMedia.</p>
+            <p><a class="btn btn-sm" href="https://www.facebook.com/cnimedia2024" target="_blank" rel="noopener">View Campaigns</a></p>
           </div>
         </article>
       </div>
-
-      <p class="muted note">Want to see full case studies or Figma prototypes? Email me or connect on LinkedIn.</p>
     </section>
 
     <!-- CONTACT -->
     <section id="contact" class="section container">
       <h2>Contact</h2>
-      <div class="contact-grid">
-        <div>
-          <p>I'm available for collaborations, freelance work, and conversations about design & technology. Connect with me:</p>
-          <ul class="contact-list">
-            <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/luisarcarable" target="_blank" rel="noopener">linkedin.com/in/luisarcarable</a></li>
-            <li><strong>Business Email:</strong> <a href="mailto:luisarcarable@gmail.com">luisarcarable@gmail.com</a></li>
-            <li><strong>Student Email:</strong> <a href="mailto:luisarcarable@iskolarngbayan.pup.edu.ph">luisarcarable@iskolarngbayan.pup.edu.ph</a></li>
-          </ul>
+      <p>Available for collaborations and projects. Connect with me:</p>
+      <ul class="contact-list">
+        <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/luisarcarable" target="_blank" rel="noopener">linkedin.com/in/luisarcarable</a></li>
+        <li><strong>Business Email:</strong> <a href="mailto:luisarcarable@gmail.com">luisarcarable@gmail.com</a></li>
+        <li><strong>Student Email:</strong> <a href="mailto:luisarcarable@iskolarngbayan.pup.edu.ph">luisarcarable@iskolarngbayan.pup.edu.ph</a></li>
+      </ul>
+      <form id="contactForm" class="contact-form" aria-label="Contact form">
+        <label>Your name<input type="text" name="name" id="name" required></label>
+        <label>Your email<input type="email" name="email" id="email" required></label>
+        <label>Message<textarea name="message" id="message" rows="6" required></textarea></label>
+        <div class="form-actions">
+          <button type="submit" class="btn btn-primary">Send Message</button>
+          <button type="reset" class="btn btn-ghost">Reset</button>
         </div>
-
-        <form id="contactForm" class="contact-form" aria-label="Contact form">
-          <label>
-            Your name
-            <input type="text" name="name" id="name" required>
-          </label>
-          <label>
-            Your email
-            <input type="email" name="email" id="email" required>
-          </label>
-          <label>
-            Message
-            <textarea name="message" id="message" rows="6" required></textarea>
-          </label>
-          <div class="form-actions">
-            <button type="submit" class="btn btn-primary">Send Message</button>
-            <button type="reset" class="btn btn-ghost">Reset</button>
-          </div>
-          <p class="muted small">This form will open your email client to send a message. Customize action to use Formspree or a server endpoint.</p>
-        </form>
-      </div>
+      </form>
     </section>
+
   </main>
 
   <footer class="site-footer">
-    <div class="container">
-      <p>© <span id="year"></span> Luisa Carable — Built with care. <span class="muted">Pasig City Scholar | PUP - San Juan</span></p>
-    </div>
+    <div class="container"><p>© <span id="year"></span> Luisa Carable — Pasig City Scholar | PUP - San Juan</p></div>
   </footer>
 
   <script src="script.js" defer></script>
